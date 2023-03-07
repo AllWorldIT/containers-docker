@@ -64,7 +64,7 @@ RUN set -eux; \
 
 # Install docker-squash and remove health checking as this is not a daemon
 RUN set -eux; \
-	pip install --use-pep517 docker-squash; \
+	pip install --no-cache --use-pep517 docker-squash; \
 	rm -f /usr/local/share/flexible-docker-containers/tests.d/40-crond.sh; \
 	rm -f /usr/local/share/flexible-docker-containers/tests.d/90-healthcheck.sh
 
