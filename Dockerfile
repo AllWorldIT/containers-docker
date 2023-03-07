@@ -50,6 +50,7 @@ RUN set -eux; \
 		xz \
 		\
 		docker-cli-buildx \
+		docker-cli-compose \
 		docker-py \
 		py3-certifi \
 		py3-charset-normalizer \
