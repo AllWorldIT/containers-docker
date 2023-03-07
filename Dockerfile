@@ -59,6 +59,8 @@ RUN set -eux; \
 		py3-urllib3 \
 		py3-websocket-client \
 		; \
+	true "Symlink docker-compose"; \
+	ln -s /usr/libexec/docker/cli-plugins/docker-compose /usr/local/bin/docker-compose; \
 	true "Cleanup"; \
 	rm -f /var/cache/apk/*
 
