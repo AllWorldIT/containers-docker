@@ -21,9 +21,6 @@
 
 FROM registry.conarx.tech/containers/alpine/3.17
 
-# 3.17 = 1.41
-# 3.18 = 1.42
-ENV DOCKER_API_VERSION=1.41
 
 
 ARG VERSION_INFO=
